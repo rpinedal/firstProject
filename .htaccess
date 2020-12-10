@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?memedone\.com
+RewriteRule ^(.*)$ https://www.memedone.com/$1 [R,L]
